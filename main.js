@@ -33,12 +33,12 @@ function calculateResult() {
 
     console.log(result);
     const popup = document.getElementById('popup');
-popup.style.display = 'block';
-    document.getElementById('result').innerHTML += result + " Euro";
+    popup.style.display = 'block';
+    document.getElementById('result').innerHTML = result + " Euro";
     
 }
 
-function closePopUp() {
+function closePopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
 
