@@ -10,10 +10,10 @@
         <div class="home_container">
             <div id="home">
                 <div class="radio-options">
-                    <input type="radio" name="calc_options" value="calc_options">
+                    <input type="radio" id="calc_option" name="calc_options" value="calc_route">
                     Berechnung nach Strecke
                     <br/>
-                    <input type="radio"name="calc_options" value="calc_options">
+                    <input type="radio"id="calc_option" name="calc_options" value="calc_time">
                     Berechnung nach Zeit
                 </div>
                 <h2 class="home_label">Nutzungsdauer:</h2>
@@ -33,7 +33,7 @@
                         name="route"
                     >
                     <div class="route_text">
-                        <select name="route_option" id="route_option">>
+                        <select name="route_option" id="route_option">
                             <option value="m">m</option>
                             <option value="km">km</option>
                        </select>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="discountCode_container">
                     <h3>Rabatt Code</h3>
-                    <input type="text" id="discountCode_input"/>
+                    <input type="text" id="discountCode"/>
                 </div>
                 <div class="calcButton_container">
                     <button class="calcButton" onclick="calculateResult()">
