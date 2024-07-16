@@ -1,0 +1,46 @@
+.html-duration-picker-input-controls-wrapper .html-duration-picker {
+    padding: 8px 0;
+    padding-right: 30px !important;
+}
+
+.route_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.route_text {
+    margin-left: 5px;
+}
+
+.route_input {
+    padding: 8px 0;
+    width: 169.6px;
+}
+.calcButton {
+    margin-top: 36px;
+    margin-left: 95px;
+    padding: 8px 15px;
+    color: white;
+    background-color: rgb(54, 98, 135);
+    border-radius: 10px;
+    border: none;
+}
+
+.calcButton:hover {
+    cursor: pointer;
+    box-shadow: rgb(138, 138, 138) 0 0 5px;
+}
+
+#route_option {
+    padding: 8px;
+}
+
+#discountCode_input {
+    padding: 8px 3px;
+}
+
+input[type=number]::-webkit-outer-spin-button,  
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0;
+}

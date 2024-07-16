@@ -1,15 +1,57 @@
 <!DOCTYPE html>
     <head>
-
+        <script src="../Assets/Libarys/jquery-3.7.1.min.js"></script>
+        <script src="../main.js"></script>
+        <script src="../Assets/Libarys/html-duration-picker.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="../styles/Home.css">
     </head>
-    <body>
+    <body style="font-family: sans-serif !important">
+        <div class="home_container">
+            <div id="home">
+                <div class="radio-options">
+                    <input type="radio" name="calc_options" value="calc_options">
+                    Berechnung nach Strecke
+                    <br/>
+                    <input type="radio"name="calc_options" value="calc_options">
+                    Berechnung nach Zeit
+                </div>
+                <h2 class="home_label">Nutzungsdauer:</h2>
+                <input 
+                    id="duration" 
+                    name="duration"
+                    class="html-duration-picker" 
+                    data-hide-seconds 
+                    class="duration-picker"
+                >
+                <h2 class="home_label">Nutzungsstrecke:</h2>
+                <div class="route_container">
+                    <input 
+                        id="route" 
+                        type="number" 
+                        class="route_input" 
+                        name="route"
+                    >
+                    <div class="route_text">
+                        <select name="route_option" id="route_option">>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="discountCode_container">
+                    <h3>Rabatt Code</h3>
+                    <input type="text" id="discountCode_input"/>
+                </div>
+                <div class="calcButton_container">
+                    <button class="calcButton" onclick="calculateResult()">
+                        Berechnen
+                    </button>
+                </div>
+            </div>
+            <div class="result">
 
+            </div>
+        </div>
     </body>
-    <footer>
-        
-    </footer>
 <!DOCTYPE html>
-
-<script>
-    
-</script>
