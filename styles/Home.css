@@ -46,12 +46,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    background-color: rgb(124, 128, 180);
     padding: 20px;
     color: white;
     text-align: center;
+    box-shadow: gray 0 0 10px;
   }
   
+  .popup-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  #closeButtonPopUp, #reCalcButtonPopUp {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+  }
+
+  #closeButtonPopUp:hover, #reCalcButtonPopUp:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px grey;
+  }
+
   input[type="text"],
   input[type="password"] {
     margin: 10px 0;

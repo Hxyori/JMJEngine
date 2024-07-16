@@ -31,14 +31,15 @@ function calculateResult() {
         result = result - discount;
     }
 
-    console.log(result;)
-    //const calcButton = document.getElementById('calcButton');
+    console.log(result);
     const popup = document.getElementById('popup');
-     
-    popup.style.display = 'block';
+popup.style.display = 'block';
+    document.getElementById('result').innerHTML += result + " Euro";
+    
 }
 
-const closeButton = document.getElementById('closeButton');
-closeButton.addEventListener('click', function() {
-  loginPopup.style.display = 'none';
-});
+function closePopUp() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+
+}
