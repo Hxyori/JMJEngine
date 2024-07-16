@@ -4,26 +4,41 @@
 function calculateResult() {
     var duration = document.getElementById('duration');
     var route = document.getElementById('route');
-    var cost = 0.25;
     var calcOption = document.getElementById('calc_options');
     var routeOption = document.getElementById('route_option');
     var discountCode = document.getElementById('discountCode');
+    var result;
 
     if (routeOption = "km") {
         route = route * 1000; 
     }
 
-    
-
-    if (discountCode.length > 0) {
-        //Todo
+    if (calcOption == "calc_time") {
+        result = 0.25 * duration + 1;
+    } else {
+        result = 1.50 * route / 1000;
     }
 
+    //Rabattcodes sind zulässig: Tec5 für 5%, Tec15 für 15%, TecFirstTry für 50%
+    if (discountCode == "Tec5") {
+        var discount = result / 0.05;
+        result = result - discount;
+    } else if (discountCode == "Tec15") {
+        var discount = result / 0.15;
+        result = result - discount;
+    } else if (discountCode == "TecFirstTry") {
+        var discount = result / 0.50;
+        result = result - discount;
+    }
 
-    //ToDO 
+    console.log(result;)
+    //const calcButton = document.getElementById('calcButton');
+    const popup = document.getElementById('popup');
+     
+    popup.style.display = 'block';
 }
 
-function togglePopUp() {
-    var popup = document.getElementById("userPopUp");
-    popup.classList.toggle("show");
-}
+const closeButton = document.getElementById('closeButton');
+closeButton.addEventListener('click', function() {
+  loginPopup.style.display = 'none';
+});

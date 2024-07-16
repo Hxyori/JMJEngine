@@ -44,14 +44,18 @@
                     <input type="text" id="discountCode"/>
                 </div>
                 <div class="calcButton_container">
-                    <button class="calcButton" onclick="calculateResult()">
+                    <button id="calcButton" class="calcButton" onclick="calculateResult()">
                         Berechnen
                     </button>
                 </div>
             </div>
-            <div class="result">
-
-            </div>
+            <div id="popup">
+                <form>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <input type="submit" value="Log In">
+                </form>
+              </div>
         </div>
     </body>
 <!DOCTYPE html>
